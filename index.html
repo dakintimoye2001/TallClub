@@ -9,6 +9,7 @@
     background-color: pink;
     padding: 0;
     margin: 0;
+        font-family: Montserrat, sans-serif;
   }
 
   html {
@@ -89,12 +90,63 @@
 
     .first-three img {
        flex: 1 1 18.75rem;
-       max-width: 40rem;
-      height: 12rem;
+      width: 100%;
+      height: 18rem;
         object-fit: cover;
-      padding: 0.5rem;
+        padding-bottom: 1rem;
+      
     }
-  
+
+    .build {
+      background-color: teal;
+      color: rgb(255, 255, 0);
+      font-size: 2rem;
+      line-height:3rem;
+      font-family: 'MontserratThin-Regular', sans-serif;
+      text-align: left;
+      margin-bottom:5rem;
+      
+    }
+
+
+    .build h4 {
+       margin-left: 1rem;
+         margin-bottom: 0.10rem;
+         padding-top: 2rem;
+    }
+
+    .build #small-text {
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+
+    .build p {
+      
+    }
+
+    .havefun {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+      
+    }
+
+    .havefun h3 {
+      text-align: center;
+      color: yellow;
+      font-size: 2rem;
+    }
+
+    .havefun img {
+  width: clamp(15rem, 50vw, 40rem);
+    aspect-ratio: 67.6 / 87.2;  /* keeps shape */
+    height: auto;
+    object-fit: cover;
+    }
+
+
   </style>
 
 </head>
@@ -108,9 +160,9 @@
 <nav> 
 
 <ul> 
-    <li> Events </li>
-    <li> Results </li>
-    <li> Partnering Restaurants </li>
+    <li id="events1"><a href="#events1">Events</a></li>
+    <li id="results1"><a href="#results1">Results</a></li>
+    <li id="contact1"><a href="#contact1">Partnering Resturants </a> </li>
 </ul>
 
 </nav>
@@ -126,7 +178,7 @@
 <h2> Rich and Tall. Meet Up. Celebrate riches. </h2>
 <p> Come join our rich snobby community whose focus is on how we become richer and taller than everyone guilt-free! </p>
 
-<p> Tall People Rich Club is a paid MeetUp group sponsored by Rich Monsters.
+<p> Tall People Rich Club is a paid MeetUp group sponsore by <a href="#"> Rich  Monsters </a>.
   </p>
 </div>
 
@@ -137,33 +189,44 @@
 
 </div>
 
- <img src="./img/marathon.jpg"> 
 
 
+<div class="build">
 <h4> "I build my weeknight plans around money. I can exercise and meet rich people every week!"
--Bryce R. - financial advisor/frequent runner since 2018 </h4>
+</h4>
+<p id="small-text"> -Bryce R. - financial advisor/frequent runner since 2018  </p>
+
+</div>
 
 
-<img src="./img/tennisrich2.jpg">
-<img src="./img/richpeoplerunning.jpg">
-<img src="./img/richfeast.jpg">
+<div class="first-three"> 
+   <img src="./img/tennisrich2.jpg">
+ <img src="./img/richrunnersenior.jpg">
+ <img src="./img/richfeast.jpg"> 
 
+</div>
+
+ 
 <div class="havefun"> 
 <h3>  Come join the fun! </h3>
 <img src="./img/marathon.jpg">
 <h3> We meet every evening in the city square at 7PM! </h3>
 </div>
 
-<footer> 
 
-<ul>
-  <li> Events </li>  
-   <li> Results </li>  
-    <li> Partnering Resturants </li>  
+<header> 
+
+<nav> 
+
+<ul> 
+    <li id="events1"><a href="#events1">Events</a></li>
+    <li id="results1"><a href="#results1">Results</a></li>
+    <li id="contract1"><a href="#contact1">Partnering Resturants </a> </li>
 </ul>
 
+</nav>
 
-</footer>
+</header>
 
 </body>
 
